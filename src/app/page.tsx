@@ -1,6 +1,6 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
 	return (
@@ -34,7 +34,10 @@ export default function Home() {
 						<div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-green-600 flex items-center justify-center">
 							<span className="text-sm font-bold text-white">PS</span>
 						</div>
-						<Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200">
+						<Badge
+							variant="secondary"
+							className="bg-blue-50 text-blue-700 border-blue-200"
+						>
 							PairSpace 共同名義専門サービス
 						</Badge>
 					</div>
@@ -47,15 +50,23 @@ export default function Home() {
 						ふたりの理想の住まい
 					</h1>
 					<p className="mb-8 text-lg leading-8 text-slate-600 sm:text-xl">
-						<span className="font-semibold text-blue-600">PairSpace</span>は同棲カップル向けの共同名義賃貸サービス。
+						<span className="font-semibold text-blue-600">PairSpace</span>
+						は同棲カップル向けの共同名義賃貸サービス。
 						<br />
 						両方の家賃補助を活用して、ワンランク上の住環境を手に入れませんか？
 					</p>
 					<div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-						<Button size="lg" className="text-lg px-8 py-3 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
+						<Button
+							size="lg"
+							className="text-lg px-8 py-3 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
+						>
 							無料相談を予約する
 						</Button>
-						<Button variant="outline" size="lg" className="text-lg px-8 py-3 border-blue-200 text-blue-700 hover:bg-blue-50">
+						<Button
+							variant="outline"
+							size="lg"
+							className="text-lg px-8 py-3 border-blue-200 text-blue-700 hover:bg-blue-50"
+						>
 							サービス詳細
 						</Button>
 					</div>
@@ -90,30 +101,51 @@ export default function Home() {
 									<div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
 										<span className="text-white font-bold text-sm">♡</span>
 									</div>
-									<CardTitle className="text-blue-900">借りる側のメリット</CardTitle>
+									<CardTitle className="text-blue-900">
+										借りる側のメリット
+									</CardTitle>
 								</div>
 							</CardHeader>
 							<CardContent className="space-y-4">
 								<div className="space-y-3">
 									<div className="flex items-start gap-3">
-										<Badge variant="default" className="bg-blue-600">01</Badge>
+										<Badge variant="default" className="bg-blue-600">
+											01
+										</Badge>
 										<div>
-											<h4 className="font-semibold text-slate-900">両方の家賃補助を活用</h4>
-											<p className="text-sm text-slate-600">共同名義契約により、カップル両方の家賃補助を受給可能</p>
+											<h4 className="font-semibold text-slate-900">
+												両方の家賃補助を活用
+											</h4>
+											<p className="text-sm text-slate-600">
+												共同名義契約により、カップル両方の家賃補助を受給可能
+											</p>
 										</div>
 									</div>
 									<div className="flex items-start gap-3">
-										<Badge variant="default" className="bg-blue-600">02</Badge>
+										<Badge variant="default" className="bg-blue-600">
+											02
+										</Badge>
 										<div>
-											<h4 className="font-semibold text-slate-900">ワンランク上の住まい</h4>
-											<p className="text-sm text-slate-600">合計補助額により、より良い立地・設備の物件にアクセス</p>
+											<h4 className="font-semibold text-slate-900">
+												ワンランク上の住まい
+											</h4>
+											<p className="text-sm text-slate-600">
+												合計補助額により、より良い立地・設備の物件にアクセス
+											</p>
 										</div>
 									</div>
 									<div className="flex items-start gap-3">
-										<Badge variant="default" className="bg-blue-600">03</Badge>									<div>
-										<h4 className="font-semibold text-slate-900">専門サポート</h4>
-										<p className="text-sm text-slate-600">PairSpace独自の共同名義手続きをプロがフルサポート</p>
-									</div>
+										<Badge variant="default" className="bg-blue-600">
+											03
+										</Badge>{" "}
+										<div>
+											<h4 className="font-semibold text-slate-900">
+												専門サポート
+											</h4>
+											<p className="text-sm text-slate-600">
+												PairSpace独自の共同名義手続きをプロがフルサポート
+											</p>
+										</div>
 									</div>
 								</div>
 							</CardContent>
@@ -126,30 +158,50 @@ export default function Home() {
 									<div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
 										<span className="text-white font-bold text-sm">¥</span>
 									</div>
-									<CardTitle className="text-green-900">貸す側のメリット</CardTitle>
+									<CardTitle className="text-green-900">
+										貸す側のメリット
+									</CardTitle>
 								</div>
 							</CardHeader>
 							<CardContent className="space-y-4">
 								<div className="space-y-3">
 									<div className="flex items-start gap-3">
-										<Badge variant="default" className="bg-green-600">01</Badge>
+										<Badge variant="default" className="bg-green-600">
+											01
+										</Badge>
 										<div>
-											<h4 className="font-semibold text-slate-900">家賃収入の最適化</h4>
-											<p className="text-sm text-slate-600">二人目の家賃補助額の半分まで家賃を上げることが可能</p>
+											<h4 className="font-semibold text-slate-900">
+												家賃収入の最適化
+											</h4>
+											<p className="text-sm text-slate-600">
+												二人目の家賃補助額の半分まで家賃を上げることが可能
+											</p>
 										</div>
 									</div>
 									<div className="flex items-start gap-3">
-										<Badge variant="default" className="bg-green-600">02</Badge>
+										<Badge variant="default" className="bg-green-600">
+											02
+										</Badge>
 										<div>
-											<h4 className="font-semibold text-slate-900">利回りの向上</h4>
-											<p className="text-sm text-slate-600">従来より高い家賃設定により投資効率が向上</p>
+											<h4 className="font-semibold text-slate-900">
+												利回りの向上
+											</h4>
+											<p className="text-sm text-slate-600">
+												従来より高い家賃設定により投資効率が向上
+											</p>
 										</div>
 									</div>
 									<div className="flex items-start gap-3">
-										<Badge variant="default" className="bg-green-600">03</Badge>
+										<Badge variant="default" className="bg-green-600">
+											03
+										</Badge>
 										<div>
-											<h4 className="font-semibold text-slate-900">安定した入居者</h4>
-											<p className="text-sm text-slate-600">共働きカップルによる安定した家賃収入を確保</p>
+											<h4 className="font-semibold text-slate-900">
+												安定した入居者
+											</h4>
+											<p className="text-sm text-slate-600">
+												共働きカップルによる安定した家賃収入を確保
+											</p>
 										</div>
 									</div>
 								</div>
@@ -239,10 +291,17 @@ export default function Home() {
 						お気軽にお問い合わせください。
 					</p>
 					<div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-						<Button size="lg" className="text-lg px-12 py-4 bg-white text-blue-600 hover:bg-blue-50">
+						<Button
+							size="lg"
+							className="text-lg px-12 py-4 bg-white text-blue-600 hover:bg-blue-50"
+						>
 							無料相談を予約する
 						</Button>
-						<Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 backdrop-blur border-white/50 text-white hover:bg-white/20 hover:border-white/70">
+						<Button
+							variant="outline"
+							size="lg"
+							className="text-lg px-8 py-4 bg-white/10 backdrop-blur border-white/50 text-white hover:bg-white/20 hover:border-white/70"
+						>
 							資料請求
 						</Button>
 					</div>
@@ -264,7 +323,9 @@ export default function Home() {
 								<h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
 									PairSpace
 								</h3>
-								<p className="text-xs text-slate-600">共同名義専門賃貸仲介サービス</p>
+								<p className="text-xs text-slate-600">
+									共同名義専門賃貸仲介サービス
+								</p>
 							</div>
 						</div>
 						<p className="text-sm text-slate-500 mt-4">

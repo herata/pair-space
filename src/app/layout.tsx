@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: "PairSpace | 共同名義専門賃貸仲介サービス",
-	description: "同棲カップル向けの共同名義賃貸サービス。両方の家賃補助を活用して、ワンランク上の住まいを実現しませんか？",
+	description:
+		"同棲カップル向けの共同名義賃貸サービス。両方の家賃補助を活用して、ワンランク上の住まいを実現しませんか？",
 };
 
 export default function RootLayout({
